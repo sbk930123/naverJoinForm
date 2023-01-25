@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Dotum,'돋움',Helvetica,sans-serif;
+}
+
+p,li {
+  font-size: 12px;
+  color: #666666;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 768px;
+  min-width: 460px;
+  position: relative;
+}
+
+#lang-select {
+  position: absolute;
+  display: inline-block;
+  min-width: 95px;
+  height: 30px;
+  padding: 8px 8px 7px 9px;
+  border: solid 1px #dadada;
+  font-size: 12px;
+  line-height: 15px;
+  background-color: #fff;
+  box-sizing: border-box;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 400;
+  color: #333;
+}
+
+.intro {
+  display: flex;
+  justify-content: end;
+  margin-top: 15px;
+}
+
+.logo {
+  margin: 0 auto;
+  width: 240px;
+  padding: 50px 0 44px;
+}
+
+.logo img {
+  width: 240px;
+  height: 44px;
+}
+
+.title {
+  width: 460px;
+  margin: 0 auto;
+  display: flex;
+}
+
+#title-check {
+  display: none;
+}
+
+.title-cbox {
+  width: 45px;
+  height: 35px;
+  background-image: url('./images/pc_check_off_24.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  line-height: 35px;
+  margin-right: 10px;
+}
+
+.title-txt {
+  display: block;
+  height: 35px;
+  text-decoration: underline;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.main-wrap {
+  width: 460px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  margin-top: 22px;
+  margin-bottom: 5px;
+}
+
+.main-cbox {
+  width: 20px;
+  height: 20px;
+  background-image: url('./images/pc_chcek_off_s_20.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin: auto 2px;
+}
+
+.main-txt {
+  display: block;
+  height: 35px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 35px;
+  margin-left: 8px;
+}
+
+.main-txt::after {
+  content: '(필수)';
+  color: #08a600;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.main-txt2 {
+  display: block;
+  height: 35px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 35px;
+  margin-left: 8px;
+}
+
+.main-txt2::after {
+  content: '(선택)';
+  color: #8E8E8E;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.txt-box {
+  width: 460px;
+  height: 88px;
+  position: relative;
+  overflow: auto;
+  height: 88px;
+  margin-top: 8px;
+  padding: 12px;
+  border: 1px solid #dadada;
+  background: #fff;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.txt-box2 {
+  width: 460px;
+  position: relative;
+  height: 88px;
+  margin-top: 8px;
+  padding: 2px 12px 12px 12px;
+  background: #fff;
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.txt-box a {
+  text-decoration: none;
+  color: #08a600;
+}
+
+.txt-box p,
+.txt-box li {
+  margin: 10px 0;
+}
+
+.txt-box p:first-child{
+  margin-top: 0;
+}
+
+.chld-guide {
+  display: block;
+  margin: 4px 0;
+  padding: 6px 8px;
+  border: 1px solid #08a600;
+  background: #fff;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 12px;
+  color: #08a600;
+  position: absolute;
+  right: 0;
+}
+
+.btn-wrap {
+  width: 460px;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.btn-cancel {
+  width: 225px;
+  display: block;
+  padding: 15px 0 15px;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  color: #fff;
+  background-color: #8e8e8e;
+  border: none;
+}
+
+.btn-correct {
+  width: 225px;
+  display: block;
+  padding: 15px 0 15px;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  color: #fff;
+  background-color: #03c75a;
+  border: none;
+}
+
+.footer-txt-box {
+  margin-top: 19px;
+}
+
+.footer-txt {
+  text-align: center;
+}
+
+.footer-txt a {
+  text-decoration: underline;
+}
+
+.footer-list {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-list li::before {
+  content: '|';
+  padding: 0 4px;
+  color: #8E8E8E;
+  opacity: .5;
+}
+
+.footer-list li:first-child::before {
+  content: '';
+}
+
+.footer-outro {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+.footer-outro img {
+  width: 63px;
+  height: 12px;
+}
+
+.footer-outro p {
+  font-size: 10px;
+  margin: 0 10px;
+}
+
+
+
